@@ -1,2 +1,4 @@
-# Learning about programming. Short 2d game named: Alien Invasion
-2D game
+# alien_invasion
+2D game 
+Learning about programming. My first project.
+
