@@ -11,13 +11,14 @@ class AlienInvasion:
 
         self.clock = pygame.time.Clock()
         self.settings = Settings ()
-        self.ship = Ship(self)
+
 
         self.screen = pygame.display.set_mode((self.settings.screen_width, self.settings.screen_height))
         pygame.display.set_caption("Alien Invasion")
 
+        self.ship = Ship(self)
         # Set the background color.
-        self.bg_color = (230, 230, 239)
+        self.bg_color = (230, 230, 230)
 
     def run_game(self):
         """Start the main loop for the game."""
@@ -29,6 +30,7 @@ class AlienInvasion:
 
             # Redraw the screen during each pass through the loop.
             self.screen.fill(self.bg_color)
+            self.ship.blitme()
 
             #Make the most recently drawn screen visible
             pygame.display.flip()
